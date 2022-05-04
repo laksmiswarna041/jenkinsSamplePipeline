@@ -4,6 +4,8 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
+                sh 'sudo service docker start'
+                sh 'print("Hello World")'
             }
         }
     }
